@@ -7,4 +7,16 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 
-teams = Team.Create([{ name: "West Coast Eagles"}])
+# Teams
+eagles = Team.create(name: "Eagles")
+demons = Team.create(name: "Demons")
+
+# Players
+eagles.players.create(name: "Terry", ranking: 90)
+eagles.players.create(name: "Dano", ranking: 80)
+eagles.players.create(name: "Frank", ranking: 70)
+eagles.players.create(name: "Jim", ranking: 60)
+demons.players.create(name: "Gus", ranking: 90)
+demons.players.create(name: "Larry", ranking: 80)
+demons.players.create(name: "Pete", ranking: 70)
+demons.players.create(name: "Bob", ranking: 60)

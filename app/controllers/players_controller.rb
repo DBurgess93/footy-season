@@ -1,6 +1,6 @@
 class PlayersController < ApplicationController
   def index
-    @players = Player.all
+    @players = @team.players
   end
 
   def show
@@ -45,4 +45,7 @@ class PlayersController < ApplicationController
     params.require(:player).permit(:name, :ranking, :team_id)
   end
 
+  def find_team
+    @team = Team.find(params[:team_id])
+  end
 end

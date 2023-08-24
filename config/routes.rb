@@ -3,11 +3,12 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  resources :players
-  get '/players/:id', to: 'players#show'
+  resources :teams do
+    resources :players
+  end
 
-  resources :teams
   get '/teams/:id', to: 'teams#show'
+  get '/players/:id', to: 'players#show'
 
   get 'about', to: 'pages#about'
   get 'ladder', to: 'pages#ladder'

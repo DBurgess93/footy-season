@@ -1,0 +1,7 @@
+<h1><%= @team.name%> Show Page</h1>
+<h2>Players</h2>
+<ul>
+  <% @team.players.each do |player| %>
+    <li> <%= link_to player.name, team_player_path(@team, player) %> </li>
+  <% end %>
+</ul>
