@@ -25,14 +25,13 @@ kangaroos = Team.create(name: "Kangaroos", ladder_position: 2)
 puts 'teams created'
 
 # Players
-eagles.players.create(name: "Terry", ranking: 90)
-eagles.players.create(name: "Dano", ranking: 80)
-eagles.players.create(name: "Frank", ranking: 70)
-eagles.players.create(name: "Jim", ranking: 60)
-
-demons.players.create(name: "Gus", ranking: 90)
-demons.players.create(name: "Larry", ranking: 80)
-demons.players.create(name: "Pete", ranking: 70)
-demons.players.create(name: "Bob", ranking: 60)
+18.times {demons.players.create(name: Faker::Name.name, ranking: rand(50..100))}
+18.times {eagles.players.create(name: Faker::Name.name, ranking: rand(50..100))}
+18.times {swans.players.create(name: Faker::Name.name, ranking: rand(50..100))}
+18.times {tigers.players.create(name: Faker::Name.name, ranking: rand(50..100))}
+18.times {cats.players.create(name: Faker::Name.name, ranking: rand(50..100))}
+18.times {suns.players.create(name: Faker::Name.name, ranking: rand(50..100))}
+18.times {magpies.players.create(name: Faker::Name.name, ranking: rand(50..100))}
+18.times {kangaroos.players.create(name: Faker::Name.name, ranking: rand(50..100))}
 
 puts 'players created'
