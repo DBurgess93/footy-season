@@ -10,6 +10,7 @@
 # Teams
 eagles = Team.create(name: "Eagles")
 demons = Team.create(name: "Demons")
+puts 'teams created'
 
 # Players
 eagles.players.create(name: "Terry", ranking: 90)
@@ -20,3 +21,5 @@ demons.players.create(name: "Gus", ranking: 90)
 demons.players.create(name: "Larry", ranking: 80)
 demons.players.create(name: "Pete", ranking: 70)
 demons.players.create(name: "Bob", ranking: 60)
+puts 'players created'
+
