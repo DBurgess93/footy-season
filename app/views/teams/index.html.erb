@@ -1,5 +1,5 @@
 <h1>All Teams</h1>
 
 <% @teams.each do |team| %>
-  <h2> <%= link_to team.name, team_path(team) %> </h2>
+  <h2><%= team.ladder_position %> - <%= link_to team.name, team_path(team) %> </h2>
 <% end %>

@@ -1,6 +1,6 @@
 class TeamsController < ApplicationController
   def index
-    @teams = Team.all
+    @teams = Team.order(:ladder_position)
   end
 
   def show

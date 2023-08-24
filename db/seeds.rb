@@ -6,10 +6,13 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+puts "Destroying all Teams and Players"
+Player.destroy_all
+Team.destroy_all
 
 # Teams
-eagles = Team.create(name: "Eagles")
-demons = Team.create(name: "Demons")
+eagles = Team.create(name: "Eagles", ladder_position: 1)
+demons = Team.create(name: "Demons", ladder_position: 2)
 puts 'teams created'
 
 # Players
@@ -17,9 +20,10 @@ eagles.players.create(name: "Terry", ranking: 90)
 eagles.players.create(name: "Dano", ranking: 80)
 eagles.players.create(name: "Frank", ranking: 70)
 eagles.players.create(name: "Jim", ranking: 60)
+
 demons.players.create(name: "Gus", ranking: 90)
 demons.players.create(name: "Larry", ranking: 80)
 demons.players.create(name: "Pete", ranking: 70)
 demons.players.create(name: "Bob", ranking: 60)
-puts 'players created'
 
+puts 'players created'
