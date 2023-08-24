@@ -1,3 +1,6 @@
+# Faker gem
+require 'faker'
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #
@@ -13,6 +16,12 @@ Team.destroy_all
 # Teams
 eagles = Team.create(name: "Eagles", ladder_position: 1)
 demons = Team.create(name: "Demons", ladder_position: 2)
+swans = Team.create(name: "Swans", ladder_position: 1)
+tigers = Team.create(name: "Tigers", ladder_position: 2)
+cats = Team.create(name: "Cats", ladder_position: 1)
+suns = Team.create(name: "Suns", ladder_position: 2)
+magpies = Team.create(name: "Magpies", ladder_position: 1)
+kangaroos = Team.create(name: "Kangaroos", ladder_position: 2)
 puts 'teams created'
 
 # Players

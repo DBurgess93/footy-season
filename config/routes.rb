@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get '/players/:id', to: 'players#show'
 
   get 'about', to: 'pages#about'
-  get 'ladder', to: 'pages#ladder'
+  get 'ladder', to: 'ladder#index'
   get 'fixture', to: 'pages#fixture'
 
   # Defines the root path route ("/")
