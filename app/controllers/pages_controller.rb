@@ -9,6 +9,7 @@ class PagesController < ApplicationController
 
   def ladder
   end
+  
   def fixture
   end
 end
