@@ -16,12 +16,12 @@ Team.destroy_all
 # Teams
 eagles = Team.create(name: "Eagles", ladder_position: 1)
 demons = Team.create(name: "Demons", ladder_position: 2)
-swans = Team.create(name: "Swans", ladder_position: 1)
-tigers = Team.create(name: "Tigers", ladder_position: 2)
-cats = Team.create(name: "Cats", ladder_position: 1)
-suns = Team.create(name: "Suns", ladder_position: 2)
-magpies = Team.create(name: "Magpies", ladder_position: 1)
-kangaroos = Team.create(name: "Kangaroos", ladder_position: 2)
+swans = Team.create(name: "Swans", ladder_position: 3)
+tigers = Team.create(name: "Tigers", ladder_position: 4)
+cats = Team.create(name: "Cats", ladder_position: 5)
+suns = Team.create(name: "Suns", ladder_position: 6)
+magpies = Team.create(name: "Magpies", ladder_position: 7)
+kangaroos = Team.create(name: "Kangaroos", ladder_position: 8)
 puts 'teams created'
 
 # Players
