@@ -4,6 +4,7 @@
     <tr>
       <th>Position</th>
       <th>Team</th>
+      <th>Total Ranking Points</th>
     </tr>
   </thead>
   <thead>
@@ -12,6 +13,7 @@
         <tr>
           <td> <%= index + 1 %> </td>
           <td> <%= link_to team.name, team_path(team) %> </td>
+          <td> <%= team.calculate_total_ranking_points %> </td>
         </tr>
       <% end %>
     </tbody>
