@@ -1,8 +1,23 @@
 <h1><%= @team.name%> Show Page</h1>
 <h2>Players</h2>
-<ul>
-  <% @team.players.each do |player| %>
-    <li> <%= link_to player.name, team_player_path(@team, player) %> - <%= player.ranking %> </li>
-  <% end %>
-</ul>
 
+<table class="table table-dark table-zebra">
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Ranking Points</th>
+      <th><%= @team.calculate_total_ranking_points %></th>
+    </tr>
+  </thead>
+  <thead>
+    <tbody>
+    <% @team.players.each do |player| %>
+      <tr>
+        <td> <%= player.name %> </td>
+        <td> <%= player.ranking %> </td>
+        <td></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </thead>
+</table>
