@@ -1,5 +1,20 @@
 <h1>All Teams</h1>
 
-<% @teams.each do |team| %>
-  <h2><%= team.ladder_position %> - <%= link_to team.name, team_path(team) %> </h2>
-<% end %>
+<table class="table table-dark table-zebra w-25">
+  <thead>
+    <tr>
+      <th>Position</th>
+      <th>Team</th>
+    </tr>
+  </thead>
+  <thead>
+    <tbody>
+      <% @teams.each do |team| %>
+        <tr>
+          <td> <%= team.ladder_position %> </td>
+          <td> <%= link_to team.name, team_path(team) %> </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </thead>
+</table>
